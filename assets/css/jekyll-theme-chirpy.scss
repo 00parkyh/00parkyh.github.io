@@ -2,7 +2,10 @@
 ---
 
 /* prettier-ignore */
-@use '../../_sass/vendors/bootstrap';
-@use '../../_sass/main';
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
 
 /* append your custom style below */
